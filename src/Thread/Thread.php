@@ -23,9 +23,18 @@ class Thread
         return $result;
     }
 
-    public static function read(string $thread): string
+    public static function read(string $thread, bool $block): string
     {
-        $data = file_get_contents($thread);
+        $stream = fopen($thread, 'r');
+
+        $blockResult = stream_set_blocking($stream, $block);
+
+        if (!$blockResult)
+        {
+            throw new InputException('Cannot block stream');
+        }
+
+        $data = stream_get_contents($stream);
 
         if ($data === false)
         {
