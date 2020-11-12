@@ -1,0 +1,22 @@
+{
+  "name": "consolly/io",
+  "description": "Helpful wrapper for input/output tasks",
+  "keywords": ["consolly", "input", "stdin", "output", "stdout", "error", "stderr", "io"],
+  "type": "library",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "chop1k",
+      "email": "fakeshopendesu@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Consolly\\IO\\": "src/"
+    }
+  }
+}
