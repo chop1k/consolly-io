@@ -3,7 +3,7 @@
   "description": "Helpful wrapper for input/output tasks",
   "keywords": ["consolly", "input", "stdin", "output", "stdout", "error", "stderr", "io"],
   "type": "library",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "license": "MIT",
   "version": "1.0.0",
   "authors": [
